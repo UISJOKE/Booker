@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	xmlns:local="clr-namespace:Book"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Book.MenuPage">
+	<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+	
+		<Image x:Name="logo"/>
+		<Label Text="BOOKER"  HorizontalOptions="Center" FontSize="48" TextColor="#fb6e52"/>
+	<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+		<Button x:Name="MainPageBtn" Background="LightSteelBlue" Text="Начать"/>
+		<Button x:Name="InfoPageBtn" Background= "LightSteelBlue" Text="FAQ"/>
+		<Button x:Name="exitbtn" Text="Выход" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightSteelBlue"/>
+	</StackLayout>
+	</StackLayout>
+</ContentPage>

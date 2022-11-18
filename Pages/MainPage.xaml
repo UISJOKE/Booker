@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:local="clr-namespace:Book"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Book.MainPage">
+	<StackLayout Orientation="Vertical" Margin="20" >
+		<Button Text="Выбрать файл..." x:Name="openfilebtn" BackgroundColor="LightSteelBlue"/>
+		<StackLayout VerticalOptions="CenterAndExpand">
+			<Label Text="Колличество страниц в блоке:" TextColor="Gray"/>
+			<Editor x:Name="pagesblock" Text="16" TextColor="Gray" PlaceholderColor="DarkGray"/>
+			<Label x:Name ="pickerlabel" Text="Форматированые PDF" TextColor="Gray"/>
+			<Picker x:Name="picker" TextColor="Gray" Title="Форматированые PDF" TitleColor="Gray" />
+			<Button x:Name="openpdfbtn" Background="LightSteelBlue" Text="Просмотр PDF"/>
+			<Button x:Name="printbtn" Background="LightSteelBlue" Text="информация о печати"/>
+		</StackLayout>
+		<StackLayout VerticalOptions="CenterAndExpand">
+			<Button x:Name="startbtn" Text="Обработать"	HorizontalOptions="Center" VerticalOptions="Center" IsEnabled="False" BackgroundColor="LightSteelBlue"/>
+			<Button x:Name="backbtn" Text="меню" Background="LightSteelBlue" HorizontalOptions="Center" VerticalOptions="Center"/>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	xmlns:local="clr-namespace:Book"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Book.InfoPage">
+	<StackLayout x:Name="stack" >
+		<Label Text="О приложении" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="48"/>
+		<Label Text="Приложение создано с помощью библиотек Xamarin.Forms и Itextsharp" TextColor="Black" FontSize="16" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+		<StackLayout VerticalOptions="CenterAndExpand">
+			<Label Text="Фидбэк и предложения сюда:" TextColor="Black" FontSize="16" HorizontalOptions="Center"/>
+			<Image x:Name="vk"/>
+			<Image x:Name="github"/>
+			<Image x:Name="telegram"/>
+		</StackLayout>
+		<StackLayout>
+			<Label Text="Version 3.5.67 build 3567" TextColor="Black" FontSize="12" HorizontalOptions="Center"/>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
